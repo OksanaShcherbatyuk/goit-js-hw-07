@@ -80,14 +80,10 @@
 ]
 
 // Change code below this line
-
-
-const getTotalFriendCount = users => { return users.reduce((totalFr, user) => {
+const getTotalFriendCount = users => users.reduce((totalFr, user) =>
   
   // totalFr.push(...user.friends);
-  
-  return [...totalFr, ...user.friends].length; 
-   }, [])};
+  [...totalFr, ...user.friends], []).length;
    
 
 // Change code above this line
